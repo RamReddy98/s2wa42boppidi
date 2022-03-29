@@ -9,8 +9,8 @@ router.get('/', function(req, res, next) {
      value =Number(search_params.get("x"))
     if(value == 0)
     value=Math.random()
-    res.write('<h2>Computes the values for Math.atan and math.cbrt function.<h2> \n')
-    res.write('<br>')
+    res.write('<h2>Computes the values for Math.atan and math.cbrt function</h2> \n')
+    res.write('</br>')
     res.write('Math.atan2 applied to '+value+" is "+Math.atan2(value)+"\n");
     res.write('Math.atanh applied to '+value+" is "+Math.atanh(value)+"\n");
     res.end('Math.cbrt applied to '+value+" is "+Math.cbrt(value));
