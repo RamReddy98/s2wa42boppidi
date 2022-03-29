@@ -6,7 +6,7 @@ var times = 0;
 router.get('/', function(req, res, next) {
   times +=1;
 
-  res.send(`User accesses are: ${4}`);
+  res.send(`User accesses are: ${times}`);
 });
 
 module.exports = router;
